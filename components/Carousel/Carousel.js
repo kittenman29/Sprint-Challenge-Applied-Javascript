@@ -1,4 +1,7 @@
 class Carousel {
+    constructor(carouselElement){
+        this.carouselElement = carouselElement;
+        
 
 }
 
@@ -12,3 +15,6 @@ let carousel = document.querySelector();
     5. Think of how you would animate this compoennt. Make the cards slide in and out, or fade. It's up to you!
     6. Have fun!
 */
+
+let carouselThing = document.querySelectorAll('div');
+carouselThing.forEach( e => new Carousel(e));
